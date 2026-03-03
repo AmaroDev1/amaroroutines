@@ -30,6 +30,11 @@ header {
     text-align: center;
 }
 
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
 .card:hover {
     background-color: #bbab00;
 }
@@ -38,7 +43,7 @@ header {
     background-color: #1c1c1c;
     border-radius: 15px;
     overflow: hidden;
-    margin-bottom: 20px;
+/*     margin-bottom: 20px; */
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     transition: transform 0.2s ease;
     max-width: 395px;
@@ -53,7 +58,7 @@ header {
     margin: 0 auto;
     border-radius: 10px;
 
-    filter: drop-shadow(0 4px 10px rgba(166, 0, 255, 0.81));
+    filter: drop-shadow(0 4px 10px rgba(166, 0, 255, 0.538));
 
 /*     background-color: #2f2f2f8b;
     padding: 20px;
@@ -65,9 +70,9 @@ header {
 }
 
 .exercise h3 {
+    text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
-    margin-left: 130px;
 }
 
 .exercise p {
@@ -100,6 +105,7 @@ header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+        justify-content: center;
     }
 
 }
