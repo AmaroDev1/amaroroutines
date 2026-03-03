@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #540063;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+.container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: block;
+    background-color: #222;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #bbab00;
+}
+
+.exercise {
+    background-color: #1c1c1c;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease;
+    max-width: 395px;
+    margin: 13px auto;
+}
+
+.exercise img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+
+    filter: drop-shadow(0 4px 10px rgba(166, 0, 255, 0.81));
+
+/*     background-color: #2f2f2f8b;
+    padding: 20px;
+    border-radius: 12px; */
+}
+
+.exercise-content {
+    padding: 15px;
+}
+
+.exercise h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 130px;
+}
+
+.exercise p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.exercise a {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #f6ff00;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    width: fit-content;
+    margin: 15px auto 0 auto;
+}
+
+.exercise:hover {
+    transform: scale(1.010);
+}
+
+
+
+@media (min-width: 768px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}
